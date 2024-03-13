@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: tokenApp
+  server:
+    port: 8083
+  security:
+    enabled: false
+netty:
+  default:
+    allocator:
+      max-order: 3

@@ -1,0 +1,35 @@
+micronaut:
+  application:
+    name: clientApp
+  server:
+    port: 8081
+    token:
+      propagation:
+        header:
+          enabled: false
+  security:
+    enabled: true
+    oauth2:
+      clients:
+       server-service:
+          client-id: 123
+          client-secret: 345
+          grant-type: client_credentials
+          token:
+            url: http://localhost:8083/token
+            auth-method: client_secret_post
+          client-credentials:
+            service-id-regex: ".*"
+
+  http:
+    client:
+      read-timeout: 60s
+      read-idle-timeout: -1m
+    services:
+      server-service:
+        url: "http://localhost:8082"
+
+netty:
+  default:
+    allocator:
+      max-order: 3

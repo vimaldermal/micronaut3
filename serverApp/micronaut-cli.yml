@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.client.app
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, http-client, jackson-databind, java, java-application, junit, logback, lombok, maven, micronaut-validation, netty-server, readme, security-annotations, security-oauth2, shade, yaml]

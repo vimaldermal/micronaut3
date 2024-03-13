@@ -1,0 +1,11 @@
+micronaut:
+  application:
+    name: serverApp
+  server:
+    port: 8082
+  security:
+    enabled: false
+netty:
+  default:
+    allocator:
+      max-order: 3
